@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Empréstimo de Equipamentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Sistema de Empréstimo de Equipamentos</h1>
+    <p>Gerenciamento de equipamentos, colaboradores e empréstimos</p>
+</header>
+
+<main>
+    <section id="equipamentos">
+        <h2>Equipamentos</h2>
+
+        <h3>Cadastrar equipamento</h3>
+
+        <form id="formEquipamento">
+            <label for="patrimonio">Patrimônio:</label>
+            <input type="text" id="patrimonio" required>
+
+            <label for="nomeEquipamento">Nome:</label>
+            <input type="text" id="nomeEquipamento" required>
+
+            <label for="tipoEquipamento">Tipo:</label>
+            <select id="tipoEquipamento" required>
+                <option value="">Selecione...</option>
+                <option value="NOTEBOOK">Notebook</option>
+                <option value="MONITOR">Monitor</option>
+                <option value="MOUSE">Mouse</option>
+                <option value="TECLADO">Teclado</option>
+                <option value="HEADSET">Headset</option>
+                <option value="OUTRO">Outro</option>
+            </select>
+
+            <button type="submit">Cadastrar equipamento</button>
+        </form>
+
+        <p id="mensagemEquipamento"></p>
+        <h3>Equipamentos cadastrados</h3>
+
+        <ul id="listaEquipamentos"></ul>
+    </section>
+
+    <section id="colaboradores">
+        <h2>Colaboradores</h2>
+
+        <h3>Cadastrar colaborador</h3>
+
+        <form id="formColaborador">
+            <label for="nomeColaborador">Nome:</label>
+            <input type="text" id="nomeColaborador" required>
+
+            <label for="emailColaborador">E-mail:</label>
+            <input type="email" id="emailColaborador" required>
+
+            <label for="cargoColaborador">Cargo:</label>
+            <input type="text" id="cargoColaborador">
+
+            <button type="submit">Cadastrar colaborador</button>
+        </form>
+
+        <p id="mensagemColaborador"></p>
+
+        <h3>Colaboradores cadastrados</h3>
+        <ul id="listaColaboradores"></ul>
+    </section>
+
+    <section id="emprestimos">
+        <h2>Empréstimos</h2>
+        <h3>Registrar empréstimo</h3>
+
+        <form id="formEmprestimo">
+            <label for="equipamentoEmprestimo">Equipamento:</label>
+            <select id="equipamentoEmprestimo" required>
+                <option value="">Selecione um equipamento</option>
+            </select>
+
+            <label for="colaboradorEmprestimo">Colaborador:</label>
+            <select id="colaboradorEmprestimo" required>
+                <option value="">Selecione um colaborador</option>
+            </select>
+            <button type="submit">Registrar empréstimo</button>
+        </form>
+        <h3>Empréstimos registrados</h3>
+        <ul id="listaEmprestimos"></ul>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
