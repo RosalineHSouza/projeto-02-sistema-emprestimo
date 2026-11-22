@@ -114,9 +114,11 @@ https://projeto-02-sistema-emprestimo.onrender.com
 
 ## 🎥 Vídeo de apresentação
 
-Link do vídeo demonstrativo: **a incluir após a gravação**.
+[Assista à apresentação do Projeto 2](https://drive.google.com/file/d/1PmXGoHiY0wDX5xqrDiHBWvhYLp6c2UPg/view)
 
-O vídeo apresenta a arquitetura, as principais funcionalidades, as regras de negócio e uma demonstração do sistema em funcionamento.
+Duração: 4 minutos e 10 segundos.
+
+O vídeo apresenta a arquitetura, as tecnologias utilizadas, as principais funcionalidades, as regras de negócio, os testes automatizados e a aplicação publicada no Render.
 
 ## 🎓 Contexto acadêmico
 
